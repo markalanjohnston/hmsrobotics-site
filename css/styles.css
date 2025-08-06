@@ -1,1 +1,85 @@
-//css
+/* Custom styles to enhance Bootstrap */
+:root {
+    --bs-primary: #2E86AB;
+    --bs-warning: #F0A500;
+    --bs-dark: #1a1a1a;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(135deg, #2E86AB, #1e5f7e);
+    min-height: 500px;
+    display: flex;
+    align-items: center;
+}
+
+/* Hover Effects */
+.hover-lift {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hover-lift:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15) !important;
+}
+
+/* Custom Button Styles */
+.btn {
+    font-weight: 600;
+    padding: 0.5rem 1.5rem;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+}
+
+/* Navbar Customization */
+.navbar-brand {
+    font-size: 1.5rem;
+}
+
+.nav-link {
+    font-weight: 500;
+    color: #333 !important;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: var(--bs-primary) !important;
+}
+
+/* Card Enhancements */
+.card {
+    border: none;
+    transition: all 0.3s ease;
+}
+
+.card-body {
+    padding: 2rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+    
+    .display-4 {
+        font-size: 2.5rem;
+    }
+}
+
+/* Smooth Scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Section Padding */
+section {
+    scroll-margin-top: 76px; /* Account for fixed navbar */
+}
